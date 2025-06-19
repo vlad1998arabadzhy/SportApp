@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- Main Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Back Button Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="match_parent">
+            </TextView>
+            <Button
+                android:id="@+id/btn_back_warmup_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Back">
+            </Button>
+
+        </LinearLayout>
+
+        <!-- Main Button Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="593dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Head Section-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Head:"
+                android:textSize="22dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Gentle neck rotations clockwise and counterclockwise.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Slow head tilts side to side and forward to back.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Shoulder shrugs to release neck tension.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <!-- Torso Section-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Torso:"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Gentle torso twists left and right.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Side bends to stretch the core muscles.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Cat-cow stretches for spine mobility.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <!-- Arms Section-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arms:"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Arm circles forward and backward.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Cross-body arm stretches.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Wrist and elbow rotations.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <!-- Legs Section-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Legs:"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Leg swings forward and backward.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Ankle circles and calf raises.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="- Gentle lunges and knee lifts.">
+            </TextView>
+            <TextView
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

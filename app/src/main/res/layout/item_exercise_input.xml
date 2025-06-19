@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F8F8F8"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Exercise Name -->
+    <EditText
+        android:id="@+id/et_exercise_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exercise name (e.g. Push-ups)"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Reps and Duration -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/et_reps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:hint="Reps (e.g. 20)"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="Duration (sec)"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Remove Button -->
+    <Button
+        android:id="@+id/btn_remove_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="end"
+        android:text="Remove"
+        android:textSize="12sp"
+        android:background="#FFCCCC"
+        android:paddingHorizontal="12dp" />
+
+</LinearLayout>

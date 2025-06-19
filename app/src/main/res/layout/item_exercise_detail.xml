@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="#F8F8F8">
+
+    <TextView
+        android:id="@+id/tv_exercise_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1) Push-ups"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tv_exercise_last_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Target: 20 reps)"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+
+</LinearLayout>

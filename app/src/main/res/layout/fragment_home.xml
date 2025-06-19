@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Get advice section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Get advice"
+                android:textSize="16sp"
+                android:textColor="#333333" />
+
+            <ImageButton
+                android:id="@+id/btn_get_advice"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_dialog_info"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <!-- Your Goal section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Goal is..."
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/tv_goal_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have not set a goal yet"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Goal Creation Date -->
+            <TextView
+                android:id="@+id/tv_goal_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone" />
+
+            <!-- Goal Buttons Layout -->
+            <LinearLayout
+                android:id="@+id/goal_buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_set_new_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set new goal"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:background="#F0F0F0"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+
+                <Button
+                    android:id="@+id/btn_i_did_it"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Weight"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:background="#F0F0F0"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+
+            </LinearLayout>
+
+            <!-- Goal Spinners Layout -->
+            <LinearLayout
+                android:id="@+id/goal_spinners_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- First Row: Type and Amount -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinner_goal_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_weeks"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:id="@+id/spinner_goal_kilos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <!-- Second Row: Time -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+
+
+
+                    <!-- Empty space for symmetry -->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <!-- Save/Cancel Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_cancel_goal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textSize="12sp"
+                        android:textColor="#666666"
+                        android:background="#F0F0F0"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" />
+
+                    <Button
+                        android:id="@+id/btn_save_goal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:background="#E0E0E0"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Trainings section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trainings"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Trainings List Container -->
+            <LinearLayout
+                android:id="@+id/trainings_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Create Training Button -->
+            <Button
+                android:id="@+id/btn_create_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Create New Training"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:background="#E8E8E8"
+                android:padding="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

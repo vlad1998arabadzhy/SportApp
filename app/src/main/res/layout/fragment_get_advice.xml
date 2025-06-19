@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="20dp">
+
+
+    <!-- Main Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Advice   Layout-->    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+                <!--First Advice-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="85dp"
+                    android:src="@mipmap/ic_launcher"
+                    >
+                </ImageView>
+                <TextView
+                    android:id="@+id/tv_first_advice"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:text="Do not forget  about warming yourself! Check how prepare to any training."
+                    android:textSize="15dp"
+                    android:padding="7dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_first_advice"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Check!"
+                    android:textSize="10dp"
+                    >
+
+                </Button>
+
+
+            </LinearLayout>
+            <!--Second Advice-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="85dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    >
+                </ImageView>
+                <TextView
+                    android:id="@+id/tv_second_advice"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:text="Check your recommended ration for today"
+                    android:textSize="15dp"
+                    android:padding="7dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_second_advice"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Check!"
+                    android:textSize="10dp"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    
+
+        
+        <!--Separation White Plain Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </LinearLayout>
+
+
+        <!--Tips -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Small tips!"
+                android:textSize="30dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/small_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consistency beats intensity! It's better to work out 20 minutes every day than 2 hours once a week. Small daily actions create big results over time."
+                android:padding="5dp">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
